@@ -3,51 +3,105 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Pierre Juan (PJ) van Staden — Portfolio</title>
+  <title>Pierre Juan (PJ) van Staden — Futuristic Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@400;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="space-bg" aria-hidden="true">
+    <div class="stars"></div>
+    <div class="grid-lines"></div>
+    <div class="scanline"></div>
+  </div>
+
   <header class="hero">
-    <div class="hero-inner">
-      <div class="avatar">
-        <div class="initials">PJ</div>
+    <div class="nav">
+      <div class="logo">
+        <div class="logo-mark">PJ</div>
+        <div class="logo-text">van Staden</div>
       </div>
-      <div class="intro">
-        <h1>Pierre Juan <span class="muted">(PJ)</span> van Staden</h1>
-        <p class="tagline">IT Business Analyst · Project Manager · Microsoft Dynamics & Power Platform Specialist</p>
-        <div class="cta-row">
-          <a class="cta" href="#contact">Contact</a>
-          <a class="cta ghost" href="#projects">Projects</a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="btn-outline">Contact</a>
+      </nav>
+    </div>
+
+    <div class="hero-inner container">
+      <div class="left">
+        <div class="avatar-hex">
+          <div class="avatar-initials">PJ</div>
         </div>
-        <div class="quick-contact">
-          <span><strong>Phone</strong> 0780197970</span>
-          <span><strong>Email</strong> pjvanstaden.info@gmail.com</span>
-          <span><strong>LinkedIn</strong> Pierre Juan (PJ) van Staden</span>
+        <h1 class="name">Pierre Juan <span class="muted">PJ</span> van Staden</h1>
+        <p class="role">IT Business Analyst · Project Manager · Dynamics 365 & Power Platform</p>
+
+        <div class="pills">
+          <span>Business Analytics</span>
+          <span>Process Improvement</span>
+          <span>Solution Architecture</span>
         </div>
+
+        <div class="contact-small">
+          <a href="tel:0780197970">0780197970</a>
+          <a href="mailto:pjvanstaden.info@gmail.com">pjvanstaden.info@gmail.com</a>
+          <a href="#contact">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="glass-card hero-card">
+          <h3 class="card-title">Current Focus</h3>
+          <p class="card-lead">Driving process improvement and delivering projects on time and within scope while bridging business and tech.</p>
+          <ul class="key-list">
+            <li>Project Management · Agile · Jira</li>
+            <li>Dynamics 365 · Power Platform · API Integrations</li>
+            <li>Acceptance Testing · Requirements · User Stories</li>
+          </ul>
+          <div class="card-cta">
+            <a href="#projects" class="btn-primary">See Projects</a>
+            <a href="#contact" class="btn-ghost">Hire Me</a>
+          </div>
+        </div>
+
+        <div class="neon-panel glass-card">
+          <div class="neon-row">
+            <div class="neo-item">
+              <div class="neo-value">PL-400</div>
+              <div class="neo-label">Power Platform Dev</div>
+            </div>
+            <div class="neo-item">
+              <div class="neo-value">BSc IT</div>
+              <div class="neo-label">North West University</div>
+            </div>
+            <div class="neo-item">
+              <div class="neo-value">Business Analysis</div>
+              <div class="neo-label">Faculty Training Institute</div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-    <svg class="hero-wave" viewBox="0 0 1440 120" preserveAspectRatio="none">
-      <path d="M0,80 C360,140 1080,20 1440,80 L1440 120 L0 120 Z" fill="var(--accent)" opacity="0.12"></path>
-    </svg>
   </header>
 
   <main>
-    <section id="about" class="panel container">
+    <section id="about" class="panel container glass-section">
+      <h2>About</h2>
       <div class="split">
-        <div>
-          <h2>About</h2>
-          <p class="lead">I am currently working as an IT Business Analyst and Project Manager with a robust track record in driving process improvement and delivering projects on time and within scope. I am the voice between business and tech, translating needs into clear, actionable solutions.</p>
-          <p>I am committed to delivering solutions that address intricate technical demands while driving business growth. I am proactive, self-motivated and skilled in stakeholder engagement, acceptance testing, and solution architecture.</p>
+        <div class="about-text">
+          <p class="lead">I am an IT Business Analyst and Project Manager with demonstrable experience in process improvement, solution architecture and data-driven strategic planning. I translate complex technical requirements into practical business outcomes and deliver measurable value.</p>
+          <p>I work proactively to design, configure and integrate Dynamics 365 and Power Platform solutions, using Agile frameworks and data insights to guide decisions.</p>
         </div>
-        <div class="cards">
-          <div class="card">
-            <h3>Current Role</h3>
-            <p><strong>IT Business Analyst / Project Manager</strong><br>Paycorp / ATM Solutions — 2023 - Current</p>
+
+        <div class="about-stats">
+          <div class="stat">
+            <div class="stat-value">2023–Current</div>
+            <div class="stat-label">IT Business Analyst / Project Manager</div>
           </div>
-          <div class="card">
-            <h3>Previous Role</h3>
-            <p><strong>CRM Dynamics Developer</strong><br>Dynamics 365 Developer — 2022 - 2023</p>
+          <div class="stat">
+            <div class="stat-value">2022–2023</div>
+            <div class="stat-label">CRM Dynamics Developer</div>
           </div>
         </div>
       </div>
@@ -55,28 +109,28 @@
 
     <section id="skills" class="panel alt container">
       <h2>Key Competencies</h2>
-      <div class="skills-grid">
-        <div class="skill">
+      <div class="skills-grid futuristic-grid">
+        <div class="skill neon">
           <h4>Business & Strategy</h4>
           <p>Business Analytics; Data-driven strategic planning; Process improvement</p>
         </div>
-        <div class="skill">
+        <div class="skill neon">
           <h4>Technical & Tools</h4>
-          <p>Microsoft Dynamics 365; Power Platform (Power Apps, Power Automate, Power BI); API integrations</p>
+          <p>Microsoft Dynamics 365; Power Apps; Power Automate; Power BI</p>
         </div>
-        <div class="skill">
-          <h4>Project & Delivery</h4>
-          <p>Project Management; Agile (Jira, Confluence); Project planning; Status reporting & dashboarding</p>
+        <div class="skill neon">
+          <h4>Project Delivery</h4>
+          <p>Project Management; Agile; Jira; Confluence; Dashboarding</p>
         </div>
-        <div class="skill">
-          <h4>Analysis & Quality</h4>
-          <p>Business process modeling; Use case development; User stories; Acceptance testing</p>
+        <div class="skill neon">
+          <h4>Analysis & QA</h4>
+          <p>Business process modeling; Use cases; User stories; Acceptance testing</p>
         </div>
-        <div class="skill">
+        <div class="skill neon">
           <h4>Soft Skills</h4>
-          <p>Critical thinking; Excellent communication; Proactive and self-motivated</p>
+          <p>Critical thinking; Communication; Proactive and self-motivated</p>
         </div>
-        <div class="skill">
+        <div class="skill neon">
           <h4>Specialties</h4>
           <p>Solution Architecture; Customization & Configuration; Paycorp / ATM Solutions</p>
         </div>
@@ -84,91 +138,75 @@
     </section>
 
     <section id="projects" class="panel container">
-      <h2>Selected Projects & Achievements</h2>
-      <div class="project-grid">
-        <article class="project">
-          <div class="project-meta">Dynamics 365 Customization</div>
+      <h2>Selected Projects</h2>
+      <div class="project-grid futuristic-projects">
+        <article class="project card-glow">
+          <div class="meta">Dynamics 365 Customization</div>
           <h3>CRM Workflow Automation</h3>
-          <p>Designed and deployed Dynamics 365 custom solutions to streamline sales and service workflows, integrated third-party APIs, and improved data quality and process efficiency.</p>
-          <div class="tags"><span>Dynamics 365</span> <span>API Integration</span> <span>Power Automate</span></div>
+          <p>Deployed custom Dynamics solutions and API integrations to automate sales and service flows, improving throughput and data integrity.</p>
+          <div class="project-tags"><span>Dynamics 365</span><span>Power Automate</span><span>API</span></div>
         </article>
 
-        <article class="project">
-          <div class="project-meta">Paycorp / ATM Solutions</div>
-          <h3>ATM Transaction Reconciliation Dashboard</h3>
-          <p>Delivered reporting and dashboarding for transparent transaction monitoring and SLA adherence using Power BI and automated ETL processes.</p>
-          <div class="tags"><span>Power BI</span> <span>Data Analytics</span> <span>Process Improvement</span></div>
+        <article class="project card-glow">
+          <div class="meta">Paycorp / ATM</div>
+          <h3>ATM Transaction Dashboard</h3>
+          <p>Built Power BI dashboards for transaction reconciliation and SLA tracking with automated ETL and alerting pipelines.</p>
+          <div class="project-tags"><span>Power BI</span><span>Data</span><span>Automation</span></div>
         </article>
 
-        <article class="project">
-          <div class="project-meta">Process Improvement</div>
-          <h3>End-to-End Acceptance Test Framework</h3>
-          <p>Built an acceptance testing strategy and reusable test suites to validate releases in agile cadence, reducing post-release defects and accelerating feedback loops.</p>
-          <div class="tags"><span>Acceptance Testing</span> <span>Agile</span> <span>Jira</span></div>
+        <article class="project card-glow">
+          <div class="meta">Quality & Testing</div>
+          <h3>Reusable Acceptance Test Framework</h3>
+          <p>Created test suites and test strategy to validate iterative releases, reducing regression defects and speeding release validation.</p>
+          <div class="project-tags"><span>Testing</span><span>Agile</span><span>Jira</span></div>
         </article>
       </div>
     </section>
 
-    <section id="experience" class="panel alt container">
-      <h2>Professional Experience</h2>
-      <div class="timeline">
+    <section id="experience" class="panel alt container glass-section">
+      <h2>Experience</h2>
+      <div class="timeline futuristic-tl">
         <div class="tl-item">
-          <div class="tl-date">2023 - Current</div>
-          <div class="tl-content">
-            <h4>IT Business Analyst / Project Manager — Paycorp / ATM Solutions</h4>
-            <ul>
-              <li>Led projects from requirements to delivery, ensuring scope, schedule, and resource optimization.</li>
-              <li>Performed business process modeling, developed user stories, and executed acceptance testing.</li>
-              <li>Produced status reports and dashboards for stakeholder transparency.</li>
-            </ul>
+          <div class="tl-date">2023 – Current</div>
+          <div class="tl-body">
+            <h4>IT Business Analyst / Project Manager — Paycorp</h4>
+            <p>Led delivery of enterprise features, defined requirements, coordinated acceptance testing, and produced executive dashboards for progress and risk.</p>
           </div>
         </div>
 
         <div class="tl-item">
-          <div class="tl-date">2022 - 2023</div>
-          <div class="tl-content">
+          <div class="tl-date">2022 – 2023</div>
+          <div class="tl-body">
             <h4>CRM Dynamics Developer</h4>
-            <ul>
-              <li>Designed and deployed Dynamics 365 Customer Engagement and Field Service solutions.</li>
-              <li>Integrated third-party systems through APIs and automated processes with Power Platform.</li>
-              <li>Applied Agile delivery practices for iterative releases.</li>
-            </ul>
+            <p>Designed and implemented Dynamics 365 Customer Engagement and Field Service solutions, integrated third-party services, and automated business processes.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="education" class="panel container">
-      <h2>Education & Certifications</h2>
-      <div class="edu-grid">
-        <div class="edu">
-          <h4>North West University</h4>
-          <p><strong>Bachelor of Science in Information Technology</strong> — 2019 - 2022</p>
-        </div>
-        <div class="edu">
-          <h4>NetCampus</h4>
-          <p>PL-400: Microsoft Power Platform Developer Certification — 2023</p>
-        </div>
-        <div class="edu">
-          <h4>Faculty Training Institute</h4>
-          <p>Certificate Program in Business Analysis — 2024</p>
-        </div>
-      </div>
-      <p class="micro">Languages: <strong>Afrikaans</strong> &amp; <strong>English</strong></p>
-    </section>
-
-    <section id="contact" class="panel alt container">
+    <section id="contact" class="panel container contact-panel">
       <h2>Contact</h2>
       <div class="contact-grid">
-        <div>
+        <div class="contact-card glass-card">
           <p><strong>Phone</strong> 0780197970</p>
           <p><strong>Email</strong> pjvanstaden.info@gmail.com</p>
           <p><strong>LinkedIn</strong> Pierre Juan (PJ) van Staden</p>
+          <p class="micro">Languages: Afrikaans & English</p>
         </div>
-        <div class="contact-card">
-          <h3>Open to</h3>
-          <p>Roles in IT delivery, Business Analysis, Project Management, Dynamics 365, Power Platform and data-focused positions that bridge business and technology.</p>
-        </div>
+
+        <form class="contact-form glass-card" action="#" onsubmit="return false">
+          <label><span class="label-title">Message</span>
+            <textarea placeholder="Brief description of role or project"></textarea>
+          </label>
+          <div class="form-row">
+            <input type="text" placeholder="Your name" />
+            <input type="email" placeholder="Your email" />
+          </div>
+          <div class="form-cta">
+            <button class="btn-primary">Send</button>
+            <button class="btn-ghost" type="button">Download CV</button>
+          </div>
+        </form>
       </div>
     </section>
   </main>
@@ -184,5 +222,19 @@
     </div>
   </footer>
 
+  <script>
+    // micro interaction: slight floating of hero card
+    const heroCard = document.querySelector('.hero-card');
+    if (heroCard) {
+      let mouse = {x:0,y:0};
+      document.addEventListener('mousemove', e => {
+        const rect = heroCard.getBoundingClientRect();
+        const dx = (e.clientX - (rect.left + rect.width/2)) / rect.width;
+        const dy = (e.clientY - (rect.top + rect.height/2)) / rect.height;
+        heroCard.style.transform = `translate3d(${dx*6}px, ${dy*6}px, 0)`;
+      });
+      document.addEventListener('mouseleave', () => heroCard.style.transform = '');
+    }
+  </script>
 </body>
 </html>
